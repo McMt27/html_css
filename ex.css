@@ -1,0 +1,88 @@
+/* Police personnalisée pour Yeseva One */
+body {
+    background-color: #041821;
+    color: white;
+    font-family: "Yeseva One", serif; /* Utilisation correcte de la police */
+    margin: 0; /* Utilisation de cela car sinon des navigateur pourrait mettre des espace non voulu*/
+    padding: 0; /* Utilisation de cela car sinon des navigateur pourrait mettre des espace non voulu*/
+    box-sizing: border-box;
+}
+
+/* Structure du header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em; /* Ajout de padding pour l'espacement */
+    border-bottom: 2px rgba(229, 229, 229, 0.15) solid;
+}
+
+.dote {
+    color: #1bd79e;
+}
+
+/* Styles pour les réseaux sociaux */
+.reseaux_sociaux {
+    display: flex;
+    gap: 1em; /* Meilleur espacement entre les icônes */
+}
+
+.reseaux_sociaux a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transition douce sur le hover */
+}
+
+.reseaux_sociaux a:hover {
+    color: #1bd79e; /* Changement de couleur au survol */
+}
+
+/* Titre principal */
+h2 {
+    font-size: 2.5em;
+    line-height: 1.2; /* Ajustement de l'interligne */
+    margin-left: 100px;
+}
+
+.title {
+    color: #1bd79e;
+}
+
+/* Texte secondaire */
+.txt {
+    color: #808080;
+    margin-left: 100px;
+    font-family: "Montserrat", sans-serif; /* Utilisation correcte de Montserrat */
+}
+
+/* Footer */
+footer {
+    background-color: #041821;
+    color: #808080;
+    text-align: center;
+    padding: 2em 0;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: #1bd79e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivité pour les écrans plus petits */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h2, .txt {
+        margin-left: 0;
+        text-align: center;
+        padding: 0 1em;
+    }
+}
